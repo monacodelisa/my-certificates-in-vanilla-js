@@ -3,7 +3,7 @@ const main = document.querySelector("main");
 const dataArr = [
   {
     image: "assets/images/agile-dev.jpg",
-    text: "Angular Essential Training",
+    text: "Agile Development Practices",
     date: "Completed 12/07/2022",
     link: "https://www.linkedin.com/learning/certificates/75be862738c8ff86cdf5eaea455dfbaf1775040bd8589d9eb10cd756717e4b0c?trk=share_certificate"
   },
