@@ -1,6 +1,7 @@
 const main = document.querySelector("main");
+const section = document.querySelector("section");
 
-const dataArr = [
+const linkedIn = [
   {
     image: "assets/images/agile-dev.jpg",
     text: "Agile Development Practices",
@@ -99,9 +100,73 @@ const dataArr = [
   },
 ];
 
-dataArr.forEach(createBox);
+const otherCert = [
+    {
+        image: "assets/images/ts.jpg",
+        text: "TypeScript",
+        date: "Completed 06/28/2022",
+        link: "https://www.codecademy.com/profiles/esteecodes/certificates/56fb1e71303e37b643bb1905f31c8a09" 
+    },
+    {
+        image: "assets/images/coursera-js.jpg",
+        text: "HTML, CSS and JavaScript",
+        date: "Completed 05/20/2020",
+        link: "https://coursera.org/share/35c14e329ebbb896f53149d479909af9" 
+    },
+    {
+        image: "assets/images/js.jpg",
+        text: "JavaScript",
+        date: "Completed 06/18/2022",
+        link: "https://www.codecademy.com/profiles/esteecodes/certificates/705dcb15de0da4dd9d9fc4f3274b430e" 
+    },
+    {
+        image: "assets/images/js-edureka.jpg",
+        text: "Proficient in JavaScript",
+        date: "Completed 05/14/2022",
+        link: "https://www.edureka.co/certificates/mycertificate/631d9de7f6f1623c7346291877954a9d" 
+    },
+    {
+        image: "assets/images/jquery.jpg",
+        text: "jQuery",
+        date: "Completed 01/16/2022",
+        link: "https://www.codecademy.com/profiles/esteecodes/certificates/0becf7c1cd2bd715f24331dddd23425a" 
+    },
+    {
+        image: "assets/images/css.jpg",
+        text: "CSS",
+        date: "Completed 10/28/2021",
+        link: "https://www.codecademy.com/profiles/esteecodes/certificates/0becf7c1cd2bd715f24331dddd23425a" 
+    },
+    {
+        image: "assets/images/html.jpg",
+        text: "HTML",
+        date: "Completed 10/30/2021",
+        link: "https://www.codecademy.com/profiles/esteecodes/certificates/9eb0741e5ebef1f9f58a53bfac67d3a7" 
+    },
+    {
+        image: "assets/images/res-web-des-fcc.jpg",
+        text: "Responsive Web Design",
+        date: "Completed 10/30/2021",
+        link: "https://www.codecademy.com/profiles/esteecodes/certificates/9eb0741e5ebef1f9f58a53bfac67d3a7" 
+    },
+    {
+        image: "assets/images/html-css-js-udemy.jpg",
+        text: "Modern HTML & CSS",
+        date: "Completed 09/15/2021",
+        link: "https://www.udemy.com/certificate/UC-aa72e7fe-7e67-4cc7-9f9d-0308584a8625/" 
+    },
+    {
+        image: "assets/images/html-css-scss-udemy.jpg",
+        text: "Modern HTML & CSS",
+        date: "Completed 03/11/2022",
+        link: "https://www.udemy.com/certificate/UC-76cae504-9f77-4797-813a-ed3284a62251/" 
+    },
+]
 
-// Create speech boxes
+linkedIn.forEach(createBox);
+otherCert.forEach(createOtherBox);
+
+// Create linkedin boxes
 function createBox(item) {
   const box = document.createElement("div");
 
@@ -116,4 +181,20 @@ function createBox(item) {
   </a>      
   `;
   main.appendChild(box);
+}
+
+// Create other boxes
+function createOtherBox(item) {
+  const box = document.createElement("div");
+
+  const { image, text, link, date } = item;
+
+  box.classList.add("box");
+  box.innerHTML = `
+  <a href="${link}" target="_blank"><img src="${image}" alt="${text}"/>
+  <p class="info">${text}</p>
+  <small class="date">${date}</small>
+  </a>      
+  `;
+  section.appendChild(box);
 }

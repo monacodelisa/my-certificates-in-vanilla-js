@@ -30,6 +30,13 @@
 			main {
 				background-color: #b2b2b2;
 				padding: 4rem;
+			}
+
+			section {
+				padding: 0 4rem;
+			}
+
+			main, section {				
 				display: grid;
 				grid-template-columns: repeat(4, 1fr);
 				grid-gap: 3rem;
@@ -88,7 +95,15 @@
 					}
 				}
 			}
+
+			p {
+				color: #656565;
+				font-style: italic;
+				text-align: center;
+			}
 		}
+
+
 
 		.footer {
 			background-color: #818181;
