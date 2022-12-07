@@ -28,13 +28,13 @@ const linkedIn = [
   },
   {
     image: "assets/images/js-essential-2022.jpg",
-    text: "JavaScript Essential Training - 2022",
+    text: "JavaScript Essential Training",
     date: "Completed 04/20/2022",
     link: "https://www.linkedin.com/learning/certificates/c901fa5f80d0fbf2971b1fed4f77c38bb2730b4cf42bf0c025f177fb06dd0a99?trk=share_certificate"
   },
   {
     image: "assets/images/js-essential-2017.jpg",
-    text: "JavaScript Essential Training - 2017",
+    text: "JavaScript Essential Training",
     date: "Completed 05/09/2020",
     link: "https://www.linkedin.com/learning/certificates/f3df5522efaab48f44c9e3d70ed6244e057a1b4b5cfe10762c96e84d9022393d?trk=share_certificate #javascript."
   },
