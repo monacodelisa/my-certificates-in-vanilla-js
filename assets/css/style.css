@@ -28,7 +28,7 @@
   padding: 4rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 3rem;
+  grid-gap: 4rem;
 }
 * body .container main .box {
   display: flex;
