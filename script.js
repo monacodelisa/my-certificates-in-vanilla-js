@@ -2,6 +2,12 @@ const main = document.querySelector("main");
 
 const dataArr = [
   {
+    image: "assets/images/agile-dev.jpg",
+    text: "Angular Essential Training",
+    date: "Completed 12/07/2022",
+    link: "https://www.linkedin.com/learning/certificates/75be862738c8ff86cdf5eaea455dfbaf1775040bd8589d9eb10cd756717e4b0c?trk=share_certificate"
+  },
+  {
     image: "assets/images/angular.jpg",
     text: "Angular Essential Training",
     date: "Completed 06/28/2022",
@@ -30,6 +36,12 @@ const dataArr = [
     text: "CSS Essential Training",
     date: "Completed 05/06/2020",
     link: "https://www.linkedin.com/learning/certificates/e91dffcab5405a63957d1825be93a21649920d6137498482b828064887c390f9"
+  },
+  {
+    image: "assets/images/ux.jpg",
+    text: "UX - Accessability",
+    date: "Completed 04/25/2020",
+    link: "https://www.linkedin.com/learning/certificates/84af3719f8ffb48ec1f81dbf2297881582597c2871c0a7e1a2f88c104beb1da0?trk=share_certificate"
   },
   {
     image: "assets/images/ux.jpg",

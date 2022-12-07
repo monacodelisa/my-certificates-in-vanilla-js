@@ -14,8 +14,14 @@
   padding: 1rem;
 }
 * body .container h1 {
+  color: #656565;
   text-align: center;
   line-height: 1rem;
+}
+* body .container p {
+  color: #656565;
+  font-style: italic;
+  text-align: center;
   margin-bottom: 3rem;
 }
 * body .container main {
@@ -37,9 +43,11 @@
   background-color: #eaeaea;
   text-decoration: none;
   text-align: center;
+  padding-bottom: 0.2rem;
 }
 * body .container main .box a:hover {
   transform: scale(1.1);
+  transition: all ease-in-out 0.3s;
 }
 * body .container main .box a:hover .date {
   visibility: hidden;
@@ -54,7 +62,7 @@
 * body .container main .box a .info {
   position: relative;
   top: 0;
-  background-color: #3980c6;
+  background-color: #3e7791;
   color: #fff;
   font-weight: 600;
   font-size: 1.1rem;
@@ -64,7 +72,7 @@
   padding: 0.7rem;
 }
 * body .container main .box a .date {
-  color: green;
+  color: #2f705f;
   font-size: 0.9rem;
   padding: 0.5rem;
 }
