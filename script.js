@@ -164,7 +164,7 @@ const otherCert = [
 ]
 
 linkedIn.forEach(createBox);
-otherCert.forEach(createOtherBox);
+otherCert.forEach(createBox);
 
 // Create linkedin boxes
 function createBox(item) {
@@ -183,18 +183,18 @@ function createBox(item) {
   main.appendChild(box);
 }
 
-// Create other boxes
-function createOtherBox(item) {
-  const box = document.createElement("div");
+// // Create other boxes
+// function createOtherBox(item) {
+//   const box = document.createElement("div");
 
-  const { image, text, link, date } = item;
+//   const { image, text, link, date } = item;
 
-  box.classList.add("box");
-  box.innerHTML = `
-  <a href="${link}" target="_blank"><img src="${image}" alt="${text}"/>
-  <p class="info">${text}</p>
-  <small class="date">${date}</small>
-  </a>      
-  `;
-  section.appendChild(box);
-}
+//   box.classList.add("box");
+//   box.innerHTML = `
+//   <a href="${link}" target="_blank"><img src="${image}" alt="${text}"/>
+//   <p class="info">${text}</p>
+//   <small class="date">${date}</small>
+//   </a>      
+//   `;
+//   section.appendChild(box);
+// }

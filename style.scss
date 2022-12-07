@@ -27,16 +27,9 @@
 				}
 			}
 
-			main {
-				background-color: #b2b2b2;
-				padding: 4rem;
-			}
-
-			section {
-				padding: 0 4rem;
-			}
-
-			main, section {				
+			main, section {	
+				margin: auto;
+				padding: 4rem;			
 				display: grid;
 				grid-template-columns: repeat(4, 1fr);
 				grid-gap: 3rem;
