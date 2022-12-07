@@ -24,18 +24,13 @@
 }
 * body .container main {
   background-color: #b2b2b2;
+  margin: auto;
   padding: 4rem;
-}
-* body .container section {
-  padding: 0 4rem;
-}
-* body .container main, * body .container section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 3rem;
-  margin-bottom: 5rem;
 }
-* body .container main .box, * body .container section .box {
+* body .container main .box {
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -44,27 +39,27 @@
   transition: box-shadow 0.2s ease-out;
   cursor: pointer;
 }
-* body .container main .box a, * body .container section .box a {
+* body .container main .box a {
   background-color: #eaeaea;
   text-decoration: none;
   text-align: center;
   padding-bottom: 0.2rem;
 }
-* body .container main .box a:hover, * body .container section .box a:hover {
+* body .container main .box a:hover {
   transform: scale(1.1);
   transition: all ease-in-out 0.3s;
 }
-* body .container main .box a:hover .date, * body .container section .box a:hover .date {
+* body .container main .box a:hover .date {
   visibility: hidden;
 }
-* body .container main .box a img, * body .container section .box a img {
+* body .container main .box a img {
   width: 100%;
   height: 10rem;
   margin-bottom: -0.5rem;
   object-fit: cover;
   border-radius: 0.5rem 0.5rem 0 0;
 }
-* body .container main .box a .info, * body .container section .box a .info {
+* body .container main .box a .info {
   position: relative;
   top: 0;
   background-color: #3e7791;
@@ -76,7 +71,7 @@
   margin: 0;
   padding: 0.7rem;
 }
-* body .container main .box a .date, * body .container section .box a .date {
+* body .container main .box a .date {
   color: #2f705f;
   font-size: 0.9rem;
   padding: 0.5rem;

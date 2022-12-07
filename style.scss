@@ -27,13 +27,13 @@
 				}
 			}
 
-			main, section {	
+			main {	
+				background-color: #b2b2b2;
 				margin: auto;
 				padding: 4rem;			
 				display: grid;
 				grid-template-columns: repeat(4, 1fr);
 				grid-gap: 3rem;
-				margin-bottom: 5rem;
 
 				.box {
 					display: flex;
