@@ -89,8 +89,12 @@
 			}
 
 			p {
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				color: #656565;
 				text-align: center;
+				height: 4rem;
 			}
 		}
 
@@ -147,7 +151,11 @@
 
 			main {
 				grid-template-columns: repeat(3, 1fr);
-				// padding: 2rem;
+				padding: 2rem;
+
+				p {
+					height: 4rem;
+				}
 			}
 		}
 
@@ -162,6 +170,7 @@
 		.container {
 			main {
 				grid-template-columns: repeat(2, 1fr);
+				padding: 2rem;
 			}
 		}
 

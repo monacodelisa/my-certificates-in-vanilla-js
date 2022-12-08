@@ -76,8 +76,12 @@
   padding: 0.5rem;
 }
 * body .container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #656565;
   text-align: center;
+  height: 4rem;
 }
 * body .footer {
   background-color: #818181;
@@ -120,6 +124,10 @@
 @media (max-width: 1200px) {
   body .container main {
     grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+  }
+  body .container main p {
+    height: 4rem;
   }
   body .footer {
     top: 92rem;
@@ -128,6 +136,7 @@
 @media (max-width: 760px) {
   body .container main {
     grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
   }
 }
 @media (max-width: 500px) {
