@@ -17,7 +17,6 @@
 				h1 {
 					color: #656565;
 					text-align: center;
-					line-height: 1rem;
 				}
 
 				p {
@@ -145,11 +144,10 @@
 @media (max-width: 1200px) {
 	body {
 		.container {
-			.text-box {
-				width: 65%;
-			}
+
 			main {
 				grid-template-columns: repeat(3, 1fr);
+				// padding: 2rem;
 			}
 		}
 
@@ -162,16 +160,12 @@
 @media (max-width: 760px) {
 	body {
 		.container {
-			.text-box {
-				width: 65%;
-			}
 			main {
 				grid-template-columns: repeat(2, 1fr);
 			}
 		}
 
 		.footer {
-			top: 130rem;
 		}
 	}
 }
@@ -179,18 +173,18 @@
 @media (max-width: 500px) {
 	body {
 		.container {
-			margin: 2rem;
+			margin: 0;
 			h1 {
-				line-height: 2.5rem;
+				line-height: 3rem;
 			}
 
 			main {
 				grid-template-columns: 1fr;
+				padding: 2rem;
 			}
 		}
 
 		.footer {
-			top: 244rem;
 			padding: 2.3rem 1rem;
 
 			.details {

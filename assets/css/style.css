@@ -15,7 +15,6 @@
 * body .container .header h1 {
   color: #656565;
   text-align: center;
-  line-height: 1rem;
 }
 * body .container .header p {
   color: #656565;
@@ -119,9 +118,6 @@
 }
 
 @media (max-width: 1200px) {
-  body .container .text-box {
-    width: 65%;
-  }
   body .container main {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -130,28 +126,22 @@
   }
 }
 @media (max-width: 760px) {
-  body .container .text-box {
-    width: 65%;
-  }
   body .container main {
     grid-template-columns: repeat(2, 1fr);
-  }
-  body .footer {
-    top: 130rem;
   }
 }
 @media (max-width: 500px) {
   body .container {
-    margin: 2rem;
+    margin: 0;
   }
   body .container h1 {
-    line-height: 2.5rem;
+    line-height: 3rem;
   }
   body .container main {
     grid-template-columns: 1fr;
+    padding: 2rem;
   }
   body .footer {
-    top: 244rem;
     padding: 2.3rem 1rem;
   }
   body .footer .details {
