@@ -174,22 +174,27 @@ otherCert.forEach(createBox);
 
 // Create linkedin boxes
 function createBox(item) {
-  const box = document.createElement("div");
+	const box = document.createElement("div");
 
-  const { image, text, link, date } = item;
-  // instead of using item.image & item.text
+	const { image, text, link, date } = item;
+	// instead of using item.image & item.text
 
-  box.classList.add("box");
-  box.innerHTML = `
-  <a href="${link}" target="_blank"><img src="${image}" alt="${text}"/>
+	box.classList.add("box");
+	box.innerHTML = `
+  <a href="${link}" class="link"><img src="${image}" alt="${text}"/>
   <p class="info">${text}</p>
   <small class="date">${date}</small>
   </a>      
   `;
-  main.appendChild(box);
+
+	document.querySelectorAll(".link").forEach((link) => {
+		if (link.href.includes("https")) {
+			link.setAttribute("target", "_blank");
+		}
+	});
+
+	main.appendChild(box);
 }
-
-
 
 // // Create other boxes
 // function createOtherBox(item) {
@@ -202,7 +207,7 @@ function createBox(item) {
 //   <a href="${link}" target="_blank"><img src="${image}" alt="${text}"/>
 //   <p class="info">${text}</p>
 //   <small class="date">${date}</small>
-//   </a>      
+//   </a>
 //   `;
 //   section.appendChild(box);
 // }
