@@ -3,10 +3,10 @@ const section = document.querySelector("section");
 
 const linkedIn = [
   {
-    image: "assets/images/Ultimate-Java-Part-1-Fundamentals.jpg",
+    image: "assets/images/java-fundamentals.jpg",
     text: "Ultimate Java Fundamentals",
     date: "Completed 01/15/2023",
-    link: "https://codewithmosh.com/courses/580597/certificate"
+    link: "./java-fundamentals.html"
   },
   {
     image: "assets/images/angular.jpg",
@@ -188,6 +188,8 @@ function createBox(item) {
   `;
   main.appendChild(box);
 }
+
+
 
 // // Create other boxes
 // function createOtherBox(item) {

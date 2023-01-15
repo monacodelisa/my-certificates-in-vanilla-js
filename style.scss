@@ -16,6 +16,10 @@ $main-teal: #3e7791;
 			.header {
 				margin: 4rem 0 3rem;
 
+				a {
+					text-decoration: none;
+				}
+
 				h1 {
 					color: #656565;
 					text-align: center;
@@ -29,10 +33,27 @@ $main-teal: #3e7791;
 				}
 			}
 
-			main {	
+			.large-cert {
+				background-color: #b2b2b2;
+				padding: 3rem 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				img {
+					width: 50vw;
+
+					&:hover {
+						transform: scale(1.1);
+						transition: ease-in-out 0.3s;
+					}
+				}
+			}
+
+			main {
 				background-color: #b2b2b2;
 				margin: auto;
-				padding: 4rem 10rem;			
+				padding: 4rem 10rem;
 				display: grid;
 				grid-template-columns: repeat(4, 1fr);
 				grid-gap: 3rem;
@@ -46,7 +67,7 @@ $main-teal: #3e7791;
 					transition: box-shadow 0.2s ease-out;
 					cursor: pointer;
 
-					&:nth-child(-n+16){
+					&:nth-child(-n+16) {
 						border: 4px solid $main-teal;
 					}
 
@@ -187,6 +208,7 @@ $main-teal: #3e7791;
 	body {
 		.container {
 			margin: 0;
+
 			h1 {
 				line-height: 3rem;
 			}

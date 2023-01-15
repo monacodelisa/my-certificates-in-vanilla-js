@@ -12,6 +12,9 @@
 * body .container .header {
   margin: 4rem 0 3rem;
 }
+* body .container .header a {
+  text-decoration: none;
+}
 * body .container .header h1 {
   color: #656565;
   text-align: center;
@@ -21,6 +24,20 @@
   font-style: italic;
   text-align: center;
   height: 1rem;
+}
+* body .container .large-cert {
+  background-color: #b2b2b2;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* body .container .large-cert img {
+  width: 50vw;
+}
+* body .container .large-cert img:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
 }
 * body .container main {
   background-color: #b2b2b2;
