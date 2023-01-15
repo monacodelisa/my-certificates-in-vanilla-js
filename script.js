@@ -3,9 +3,9 @@ const section = document.querySelector("section");
 
 const linkedIn = [
   {
-    image: "assets/images/agile-dev.jpg",
-    text: "Agile Development Practices",
-    date: "Completed 12/07/2022",
+    image: "assets/images/Ultimate-Java-Part-1-Fundamentals.jpg",
+    text: "Ultimate Java Fundamentals",
+    date: "Completed 01/15/2023",
     link: "https://www.linkedin.com/learning/certificates/75be862738c8ff86cdf5eaea455dfbaf1775040bd8589d9eb10cd756717e4b0c?trk=share_certificate"
   },
   {
@@ -97,6 +97,12 @@ const linkedIn = [
     text: "GitHub Essential Training",
     date: "Completed 05/02/2020",
     link: "https://www.linkedin.com/learning/certificates/59e4c93fd681c46e46f47d3d0649bb71a2499bd69307835d30361c74cb94943f?trk=share_certificate"
+  },
+  {
+    image: "assets/images/agile-dev.jpg",
+    text: "Agile Development Practices",
+    date: "Completed 12/07/2022",
+    link: "https://www.linkedin.com/learning/certificates/75be862738c8ff86cdf5eaea455dfbaf1775040bd8589d9eb10cd756717e4b0c?trk=share_certificate"
   },
 ];
 
